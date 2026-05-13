@@ -1,0 +1,71 @@
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.app-header h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -1px;
+}
+
+.app-header p {
+  font-size: 18px;
+  margin: 10px 0 0 0;
+  color: #666;
+  font-weight: 500;
+}
+
+.sensors-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 36px;
+  }
+
+  .app-header p {
+    font-size: 16px;
+  }
+
+  .sensors-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 20px 10px;
+  }
+
+  .app-header h1 {
+    font-size: 28px;
+  }
+
+  .app-header p {
+    font-size: 14px;
+  }
+
+  .sensors-grid {
+    flex-direction: column;
+  }
+}
+
